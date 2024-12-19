@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <title>App Lista de Tarefas</title>
+</head>
+<body>
+
+    <header id="cabecalho">
+        <img src="./scr/capa.png" alt="logo senac" width="80px">
+    </header>
+
+    <div class="container">
+        <h1 class="text-center">Lista de Tarefas</h1>
+        <div class="input-group">
+            <input type="text" id="taskInput" class="form-control" placeholder="Adicione uma nova tarefa">
+            <input type="date" id="taskDate" class="form-control">
+            <input type="time" id="taskTime" class="form-control">
+            <select id="taskPriority" class="form-control">
+                <option value="" disabled selected>Prioridade</option>
+                <option value="Alta">Alta</option>
+                <option value="Média">Média</option>
+                <option value="Baixa">Baixa</option>
+            </select>
+            <button id="addTaskButton" class="btn btn-success">Adicionar Tarefa</button>
+        </div>
+        <div id="taskList" class="task-list"></div>
+    </div>
+
+    <footer id="rodape">
+        <p>❤️ © 2024-2025 Copyright |
+            Curso de Desenvolvimento de Sistemas |
+            SENAC
+        </p>
+    </footer>
+
+    <script src="../lista de tarefas/script.js"></script>
+    
+</body>
+</html>
